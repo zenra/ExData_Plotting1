@@ -25,7 +25,7 @@ plot1 <- function () {
     x$Global_active_power <- as.numeric(x$Global_active_power)
     
     ## Plots Global_active_power as histogram in a PNG file 'plot1.png'
-    png(filename = 'plot1.png')
+    png(filename = 'plot1.png', bg = 'transparent')
     hist(x$Global_active_power, col = 'red', main = 'Global Active Power', xlab = 'Global Active Power (kilowatts)')
     dev.off()
 }

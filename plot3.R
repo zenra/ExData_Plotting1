@@ -31,7 +31,7 @@ plot3 <- function () {
     
     ## Plots Sub_metering_ values over time as line graphs in a PNG file 
     ## 'plot3.png'
-    png(filename = 'plot3.png')
+    png(filename = 'plot3.png', bg = 'transparent')
     plot(x$Date, x$Sub_metering_1, type='l', main = '', xlab='', ylab = 'Energy sub metering', col = 'black')
     lines(x$Date, x$Sub_metering_2, col = 'red')
     lines(x$Date, x$Sub_metering_3, col = 'blue')

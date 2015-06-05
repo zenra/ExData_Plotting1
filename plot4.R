@@ -35,7 +35,7 @@ plot4 <- function () {
     
     ## Plots Global_active_power, Voltage, Energy sub metering,  
     ## Global_reactive_power as time series line graphs in 'plot4.png'
-    png(filename = 'plot4.png')
+    png(filename = 'plot4.png', bg = 'transparent')
     par(mfcol = c(2,2))
     
     plot(x$Date, x$Global_active_power, main = '', xlab='', ylab = 'Global Active Power', type = 'l')

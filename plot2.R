@@ -29,7 +29,7 @@ plot2 <- function () {
     
     ## Plots Global_active_power over time as a line graph in a PNG file 
     ## 'plot2.png'
-    png(filename = 'plot2.png')
+    png(filename = 'plot2.png', bg = 'transparent')
     plot(x$Date, x$Global_active_power, main = '', xlab='', ylab = 'Global Active Power (kilowatts)', type = 'l')
     dev.off()
 }
